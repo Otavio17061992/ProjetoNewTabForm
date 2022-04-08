@@ -23,7 +23,6 @@ body {
 
 header {
     display: flex;
-    max-width: 1500px;
     background: #E0E0E0;
     height: 80px;
     justify-content: space-around;
