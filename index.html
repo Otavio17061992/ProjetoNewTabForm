@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.ccs">
     <title>Formulario</title>
 </head>
 <body>
@@ -11,9 +12,9 @@
                     <img src="./assets/Ellipse 13.png" alt="logo da marca">
                     <h1>Controle financeiro</h1>
             </section> 
-            <section>
-                <nav>  
-                    <ul>
+            <section class="segunda-section-header">
+                <nav class="nav-header">  
+                    <ul class="lista-nav">
                         <li>Cadastro de Transações</li>
                         <li>Limpar dados</li>
                     </ul>
@@ -27,15 +28,50 @@
                 <select name="select" class="select-class">
                     <option value="valor1" selected>Compra</option>
                     <option value="valor2" >Venda</option>
-                    <option value="valor3">Troca</option>
                 </select>
                 <label for="" class="segundo-label">Nome da Mercadoria</label>
                 <input type="text" placeholder="input" class="input-class">
                 <label for="" class="terceiro-label" placeholder="R$ 0,00"></label>
 
-                <button> Adcionar transação</button>
+                <button class="btn-envio"> Adcionar transação</button>
             </form>
         </section>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="mercadoria-esquerda">Mercadoria</th>
+                        <th class="valor">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+ Lorem ipsum dolor sit amet consectetur </td>
+                        <td class="valor">R$ 12.999,99</td>
+                    </tr>
+                    <tr>
+                        <td>- Quis nostrud exercitation</td>
+                        <td class="valor">R$ 99,99</td>
+                    </tr>
+                    <tr>
+                        <td>+ Lorem ipsum </td>
+                        <td class="valor">R$ 9,99</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" class="vt" id="lc"></td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td class="total-esquerda">Total</td>
+                        <td class="valor-final">R$ 12.909,99 <br>[Lucro]</br></td>
+                    </tr>
+                </tbody>
+        </section>
+
     </main>
     
 </body>
