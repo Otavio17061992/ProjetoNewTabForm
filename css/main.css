@@ -1,0 +1,204 @@
+/*<--------------- RESET PAGE --------------->*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato';
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    display: block;
+    
+}
+
+/* <-----------------STYLE HEADER -------------->*/
+
+.container {
+    display: none;
+}
+
+header {
+    display: flex;
+    max-width: 1500px;
+    background: #E0E0E0;
+    height: 80px;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+header .div-logo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    
+
+}
+
+.texto-principal {
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 43px;
+    left: 60px;
+    top: 19px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+}
+
+
+ul {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #979797;
+    width: 350px;
+    height: 40px;
+    right: 0px;
+    top: 20px;
+    align-items: center;
+    background: #FFFFFF;
+    line-height: 19px;
+    font-weight: 600;
+    justify-content: center ;
+    
+}
+
+
+
+/*--------------- Stylização do Main --------------------------------*/
+
+
+
+main {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    
+}
+
+
+.form-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #97979797;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 344px;
+    padding: 20px;
+    left: calc(50% - 400px/2);
+    top: calc(50% - 344px/2);
+    border-radius: 4px;
+    
+    
+}
+
+.form-div .div-h1{
+     
+     text-align: center;
+     font-size: 18px;
+}
+
+.form-div .form-central {
+    display: flex;
+    flex-direction: column ;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.form-div select, .form-div input{
+    border: 1px solid #97979797;
+    border-radius: 4px;
+    height: 32px;
+
+
+}
+
+
+
+.form-div h2 {
+    height: 20px;
+    left: calc(50% - 174px/2);
+    top: calc(50% - 20px/2 - 142px);
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+    text-align: center;
+    color: #000000;
+    
+}
+
+
+.form-div label {
+    margin-bottom: 2px;
+}
+
+.form-div .div-select{
+    display: flex;
+    margin: 20px 20px 0px 20px;
+    flex-direction: column;
+}
+
+.form-div button {
+    margin-top: 19.78px;
+    background: #333;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 22px;
+    margin: 22px;
+}
+
+
+
+.form-div .label2 {
+    display: flex;
+    margin: 20px 20px 0px 20px;
+    flex-direction: column;
+
+}
+
+.form-div  .label3 {
+    display: flex;
+    margin: 20px 20px 0px 20px;
+    flex-direction: column;
+}
+
+.form-div .btn {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+
+/*<----------------------STYLE CONTEUDO EXTRATO ---------------------->*/
+
+
+.section-extrato {
+    display: flex;
+    flex-direction: column;
+}
+

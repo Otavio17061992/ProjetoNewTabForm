@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.ccs">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Formulario</title>
 </head>
 <body>
     <header>
-            <section class="primeira-section-header" > 
-                    <img src="./assets/Ellipse 13.png" alt="logo da marca">
-                    <h1>Controle financeiro</h1>
-            </section> 
+            <section class="primeira-section-header" >
+                   <Div class="div-logo">
+                        <img src="./assets/Ellipse 13.png" alt="logo da marca">
+                        <div class="texto-header">
+                            <h1 class="texto-principal">Controle financeiro</h1>
+                        </div>
+                   </Div> 
+
+            </section>
+            
+            
+
             <section class="segunda-section-header">
                 <nav class="nav-header">  
                     <ul class="lista-nav">
@@ -20,58 +28,91 @@
                     </ul>
                 </nav>  
             </section> 
+
+
+     <!-- Section Que Aparece Apenas Em Dispositivos MOVEIS-->
+          <div class="container">
+                    <input type="checkbox" id="checkbox-menu">
+                
+                    <label for="checkbox-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </label>
+         </div>
+
+
+
     </header>
-    <main>
-        <section class="primeira-section-main">
-            <form action="" class="formulario-main">
-                <label for="" class="primeiro-label"> Tipo de transação</label>
-                <select name="select" class="select-class">
-                    <option value="valor1" selected>Compra</option>
-                    <option value="valor2" >Venda</option>
-                </select>
-                <label for="" class="segundo-label">Nome da Mercadoria</label>
-                <input type="text" placeholder="input" class="input-class">
-                <label for="" class="terceiro-label" placeholder="R$ 0,00"></label>
-
-                <button class="btn-envio"> Adcionar transação</button>
-            </form>
-        </section>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th class="mercadoria-esquerda">Mercadoria</th>
-                        <th class="valor">Valor</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>+ Lorem ipsum dolor sit amet consectetur </td>
-                        <td class="valor">R$ 12.999,99</td>
-                    </tr>
-                    <tr>
-                        <td>- Quis nostrud exercitation</td>
-                        <td class="valor">R$ 99,99</td>
-                    </tr>
-                    <tr>
-                        <td>+ Lorem ipsum </td>
-                        <td class="valor">R$ 9,99</td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2" class="vt" id="lc"></td>
-
-                    </tr>
+    <main class="conteudo-principal">
 
 
-                    <tr>
+        
+            <div class="form-div">    
+               <div class="div-h1"> 
+                     <h2>Nova transacão</h2>
+               </div> 
+                <div class="form-central">
+                    <div class="div-select">
+                        <label> Tipo de transação</label>
+                        <select>
+                            <option>Compra</option>
+                            <option>Venda</option>
+                        </select>
+                    </div>
+                    <div class="label2">
+                        <label>Nome da Mercadoria</label>
+                        <input type="text" placeholder="input" class="input-class">
+                    </div>
+                    <div class="label3">
+                        <label>Valor</label>
+                        <input type="number" id="" placeholder="R$ 0,00">
+                    </div>
+                    <div class="btn">
+                        <button class="btn-envio"> Adcionar transação</button>
+                    </div>
+                </div>    
+            </div>    
+            <div class="section-extrato">
+                    <div class="extrato-child">
+                        <p>
+                        <h3>Extrato de Transações</h3>
+                        </p>    
+                    </div>
+                <table>
+                     <thead>
+                            <tr>
+                                <th class="mercadoria">Mercadoria</th>
+                                <th class="valor">Valor</th>
+                            </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td>+ Lorem ipsum dolor sit amet consectetur </td>
+                            <td class="valor">R$ 12.999,99</td>
+                        </tr>
+                        <tr>
+                             <td>- Quis nostrud exercitation</td>
+                             <td class="valor">R$ 99,99</td>
+                        </tr>
+                        <tr>
+                             <td>+ Lorem ipsum </td>
+                            <td class="valor">R$ 9,99</td>
+                        </tr>
 
-                        <td class="total-esquerda">Total</td>
-                        <td class="valor-final">R$ 12.909,99 <br>[Lucro]</br></td>
-                    </tr>
-                </tbody>
-        </section>
+                        <tr>
+                            <td  class="valorTotal" ></td>
 
+                        </tr>
+
+
+                        <tr>
+                            <td class="TotalValor">Total</td>
+                            <td class="valor-final">R$ 12.909,99 <br>[Lucro]</br></td>
+                        </tr>
+                    </tbody>
+                </table>   
+            </div> 
     </main>
     
 </body>
