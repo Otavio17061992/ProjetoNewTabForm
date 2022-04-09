@@ -6,11 +6,16 @@
     font-family: 'Lato';
 }
 
-ul {
+ul, a {
     list-style: none;
+    text-decoration: none;
+    color: #333;
 }
 
 body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
     display: block;
     
 }
@@ -24,20 +29,30 @@ body {
 header {
     display: flex;
     background: #E0E0E0;
-    height: 80px;
-    justify-content: space-around;
-    text-align: center;
     align-items: center;
+    height: 4.8rem;
+    justify-content:space-around;
+    width: 100%;
+    height: 80px;
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
 }
 
 header .div-logo{
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
     align-items: center;
-    
+    margin-right: 11rem; 
 
 }
+
+.div-logo img {
+    margin-right: 2rem;
+}
+
+
 
 .texto-principal {
     font-size: 20px;
@@ -45,7 +60,6 @@ header .div-logo{
     height: 43px;
     left: 60px;
     top: 19px;
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
@@ -61,7 +75,7 @@ header .div-logo{
 ul {
     display: flex;
     gap: 10px;
-    border: 1px solid #979797;
+    border: 1px solid #e6e3e3;
     width: 350px;
     height: 40px;
     right: 0px;
@@ -71,10 +85,18 @@ ul {
     line-height: 19px;
     font-weight: 600;
     justify-content: center ;
+    box-sizing: border-box;
     
 }
 
-
+.SpanLine {
+    padding: 8px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    white-space: nowrap;
+    transition: 0.2s;
+}
 
 /*--------------- Stylização do Main --------------------------------*/
 
@@ -196,8 +218,73 @@ main {
 /*<----------------------STYLE CONTEUDO EXTRATO ---------------------->*/
 
 
+.conteudo-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 .section-extrato {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin-top: 1.1rem;
 }
 
+.mercadoria {
+    display: flex;
+}
+
+.valor {
+    text-align: end;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    padding: 20px 20px 0px;
+    padding-right: 20px;
+    text-align: end;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.extrato-child {
+    justify-content: center;
+    display: flex;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+    font-weight: 400;
+    border-top: solid 1px #979797;
+
+}
+
+.lineUnder {
+    border-bottom: #979797 solid 1px;
+    padding: 1px; 
+}
+
+.FinalValue td { 
+    vertical-align: inherit;
+    border-color: inherit;
+    
+}
+
+.TotalValor {
+    padding: 1px;
+    font-weight: 700;
+}
+
+.valor-final {
+    text-align: end;
+    font-weight: 700;
+}
