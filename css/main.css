@@ -1,65 +1,40 @@
-/*<--------------- RESET PAGE --------------->*/
-
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Lato';
-}
-
-ul, a {
-    list-style: none;
-    text-decoration: none;
-    color: #333;
-}
-
-body {
-    margin: 0;
-    font-size: 16px;
     font-family: 'Lato', sans-serif;
-    display: block;
-    
+    box-sizing: border-box;
 }
 
-/* <-----------------STYLE HEADER -------------->*/
-
-.container {
-    display: none;
+a , ul{
+    text-decoration: none;
+    list-style: none;
 }
 
-header {
+/*--------------------STYLE CABECALHO -------------*/
+
+.cabecalho {
     display: flex;
     background: #E0E0E0;
+    justify-content: space-between;
     align-items: center;
-    height: 4.8rem;
-    justify-content:space-around;
-    width: 100%;
     height: 80px;
-    background-color: #E0E0E0;
+    margin-bottom: 31px;
+    padding-left: 260px;
+    padding-right: 227px;
+}
+
+.logo-class {
     display: flex;
-    align-items: center;
-    padding-left: 20px;
-    
+    gap: 0.7em;
 }
 
-header .div-logo{
+
+.link {
     display: flex;
-    align-items: center;
-    margin-right: 11rem; 
-
+    gap: 0.9em;
 }
 
-.div-logo img {
-    margin-right: 2rem;
-}
-
-
-
-.texto-principal {
-    font-size: 20px;
-    font-family: sans-serif;
-    height: 43px;
-    left: 60px;
-    top: 19px;
+.controle-financeiro {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
@@ -67,224 +42,432 @@ header .div-logo{
     line-height: 24px;
     display: flex;
     align-items: center;
-
     color: #333333;
 }
 
 
-ul {
-    display: flex;
-    gap: 10px;
-    border: 1px solid #e6e3e3;
-    width: 350px;
-    height: 40px;
-    right: 0px;
-    top: 20px;
-    align-items: center;
-    background: #FFFFFF;
-    line-height: 19px;
-    font-weight: 600;
-    justify-content: center ;
-    box-sizing: border-box;
-    
-}
-
-.SpanLine {
-    padding: 8px;
-    text-decoration: none;
-    color: #333;
-    position: relative;
-    white-space: nowrap;
-    transition: 0.2s;
-}
-
-/*--------------- Stylização do Main --------------------------------*/
-
-
-
-main {
-    display: flex;
-    padding-left: 200px;
-    padding-right: 200px;
-    
-}
-
-
-.form-div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid #97979797;
-    margin: 20px;
-    flex-direction: column;
-    justify-content: center;
-    width: 400px;
-    height: 344px;
-    padding: 20px;
-    left: calc(50% - 400px/2);
-    top: calc(50% - 344px/2);
-    border-radius: 4px;
-    
-    
-}
-
-.form-div .div-h1{
-     
-     text-align: center;
-     font-size: 18px;
-}
-
-.form-div .form-central {
-    display: flex;
-    flex-direction: column ;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 20px;
-    width: 100%;
-    
-}
-.form-div select, .form-div input{
-    border: 1px solid #97979797;
-    border-radius: 4px;
-    height: 32px;
-
-
-}
-
-
-
-.form-div h2 {
-    height: 20px;
-    left: calc(50% - 174px/2);
-    top: calc(50% - 20px/2 - 142px);
+a{
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    /* or 122% */
-    text-align: center;
-    color: #000000;
-    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color:#333333;
+
 }
 
-
-.form-div label {
-    margin-bottom: 2px;
+.navegacao {
+    background: #FFFF;
+    padding: 8px 20px 8px 20px;
 }
 
-.form-div .div-select{
-    display: flex;
-    margin: 20px 20px 0px 20px;
-    flex-direction: column;
+.container{
+    display: none;
 }
 
-.form-div button {
-    margin-top: 19.78px;
-    background: #333;
-    color: white;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 22px;
-    margin: 22px;
+.invisibol-h1 {
+    display: none;
 }
 
 
 
-.form-div .label2 {
-    display: flex;
-    margin: 20px 20px 0px 20px;
-    flex-direction: column;
-
-}
-
-.form-div  .label3 {
-    display: flex;
-    margin: 20px 20px 0px 20px;
-    flex-direction: column;
-}
-
-.form-div .btn {
-    display: flex;
-    flex-direction: column;
-    
-}
+/*--------------------------Style Main --------------------*/
 
 
 
-
-
-
-/*<----------------------STYLE CONTEUDO EXTRATO ---------------------->*/
-
+/*------------------------- Edtion Formulario----------------*/
 
 .conteudo-principal {
     display: flex;
+    width: 100%;
+    padding-left: 242px;
+    padding-right: 227px;
     justify-content: space-between;
 }
 
+.nova-transacao {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 42em;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 20px;
+    width: 728px;
+}
 
 
-.section-extrato {
+.row{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 1.1rem;
+    margin: 20px 20px 0px 20px;
 }
 
-.mercadoria {
+
+.pequeno-input {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-left: 18px;
+    flex-wrap: nowrap;
 }
 
-.valor {
-    text-align: end;
-}
-
-
-
-table {
-    border-collapse: collapse;
-    padding: 20px 20px 0px;
-    padding-right: 20px;
-    text-align: end;
-}
-
-thead {
-    display: table-header-group;
-    vertical-align: middle;
-    border-color: inherit;
-}
-
-.extrato-child {
-    justify-content: center;
+.grande-input {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 20px 20px 0px 20px;
 }
 
-td {
-    padding: 8px;
-    text-align: left;
-    font-weight: 400;
-    border-top: solid 1px #979797;
 
+.input-buttom { 
+    max-width: 400px;
 }
 
-.lineUnder {
-    border-bottom: #979797 solid 1px;
-    padding: 1px; 
-}
-
-.FinalValue td { 
-    vertical-align: inherit;
-    border-color: inherit;
+.texto-nova-transacao {
+    display: block;
+    margin: auto;
+    font-size: 18px;
     
 }
 
-.TotalValor {
-    padding: 1px;
+
+
+.transacao-texto{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+    display: block;
+    text-align: start;
+    font-size: 18px;
+    
+}
+
+
+
+
+.input-buttom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    
+}
+
+.input-transacao{
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 32px;
+    left: 0px;
+    right: 0.2px;
+    top: 24px;
+    width: 100%;
+}
+
+.btn-transacao {
+    background: #333333;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 49px;
+    width: 89%;
+    /* margin: 0; */
+    align-items: center;
+    margin-left: 16px;
+    
+
+}
+
+
+
+
+
+/*------------------------- Edtion Tabela Extrato -------------*/
+
+.extrato-transacao {
+    width: 100%;
+    padding-top: 28px;
+}
+
+.texto-extrato{
+    justify-content: center;
+    display: flex;
+
+}
+
+
+.extrato-transacao .texto-extrato-transacao {
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    padding: 20px 20px 0px;
+    padding-right: 20px;
+    text-align: end;
+
+}
+
+
+
+tbody td {
+    padding: 13px;
+    text-align: left;
+    font-weight: 400;
+    border-top: solid 1px #979797;
+}
+
+
+tr .valor-inicial {
+    text-align: end;
     font-weight: 700;
 }
 
-.valor-final {
+tr .valor-total{
     text-align: end;
     font-weight: 700;
+}
+
+tr .texto-mercadoria {
+    text-align: start;
+    padding-left: 1.2em;
+}
+
+tr .valor-final{
+    font-weight: 700;
+}
+
+tr .lucro {
+    text-align: end;
+}
+
+tr .td-vazia, .lucro {
+    border-top: 0px;
+
+
+}
+
+/*--------------------------- Media Screen Edtion ------------------*/
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .cabecalho {
+        display:flex;
+        justify-content:space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        
+    } 
+
+    .conteudo-principal {
+        display: flex;
+        width: 100%;
+        padding-left: 2px;
+        padding-right: 19px;
+        justify-content: space-between;
+    }
+    
+}
+
+
+/*--------------------------768px---------------------------*/
+
+
+@media screen and (max-width: 850px) {
+
+
+    .cabecalho{
+        margin-bottom: 0px;
+    }
+
+    .invisibol-h1 {
+        display:block;
+        font-size: 20px;
+    }
+
+    .controle-financeiro {
+        display: none;
+    }
+
+    .cabecalho .nav {
+        display: none;
+    }
+    
+
+    .container {
+        display: block;
+    }
+
+
+
+  /* --------------------- editon transa lado esquerdo --------*/
+
+
+    .conteudo-principal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nova-transacao {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    
+    }
+
+    .texto-nova-transacao {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .input-buttom .row{
+        margin-top: 0px;
+    }
+
+    .pequeno-input {
+        width: calc(20% - 30px);
+    }
+
+    .grande-input {
+        width: calc(60% - 60px);
+    }
+
+    .input-transacao {
+        width: 120px;
+    }
+
+
+    .input-buttom {
+        flex-direction: row;
+        max-width: 48em;
+    }
+
+
+    .transacao-texto {
+    
+        padding: 0;
+        font-size: 12px;
+    
+    }
+
+    .nova-transacao {
+        border: 1px solid #97979797;
+        margin: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: calc(100% - 10px);
+        flex-wrap: wrap;
+    }
+
+
+    .nova-transacao > div {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .input-transacao {
+        width: 100%;
+    }
+
+    .nova-transacao input, .nova-transacao select {
+        border: 1px solid #97979797;
+        border-radius: 4px;
+        height: 32px;
+    }
+
+    .nova-transacao button {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 17px;
+        width: 17%;
+        margin-right: 9px;
+        padding: 0px;
+        
+    }
+
+    .btn-transacao {
+        width: 20%;
+        margin-top: 51px;
+        padding-top: 3px;
+    }
+
+
+
+ /*----------------- Editon Table --------------*/
+
+
+    table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0.6em;
+    }
+    
+
+}
+
+@media screen and (max-width: 708px) {
+    
+    .nova-transacao > div {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center    
+
+    }
+
+    .nova-transacao > input, select {
+        width: 100%;
+        border: 1px solid #97979797;
+        border-radius: 4px;
+        height: 32px;
+    }
+    
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px 0px 20px;
+        display: contents;
+    }
+
+
+    .nova-transacao button { 
+        width: 100%;
+        margin: 0px;
+        margin-top: 21px ;
+        height: 35px;
+    }
+
+    .nova-transacao > h2 {
+        display: none;
+    }
+
+    .nova-transacao {
+        border: 0px;
+    }
 }

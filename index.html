@@ -1,121 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <header>
-            <section class="primeira-section-header" >
-                   <Div class="div-logo">
-                        <img src="./assets/Ellipse 13.png" alt="logo da marca">
-                        <div class="texto-header">
-                            <h1 class="texto-principal">Controle financeiro</h1>
-                        </div>
-                   </Div> 
-
-            </section>
-            
-            
-
-            <section class="segunda-section-header">
-                <nav class="nav-header">  
-                    <ul class="lista-nav">
-                        <li><a href="">Cadastro de Transações</a></li>
-                        <span class="SpanLine">|</span>
-                        <li><a href="" >Limpar dados</a></li>
+        <header class="cabecalho">
+            <div class="logo-class">
+                <div class="img-log">
+                    <img src="./assets/Ellipse 13.png" alt="logotipo">
+                </div>
+                <h1 class="controle-financeiro">Controle financeiro</h1>
+            </div>
+            <div class="nav">
+                <nav class="navegacao">
+                    <ul class="link">
+                        <li><a href="">Cadastro</a></li>
+                        <span class="linha-separacao">|</span>
+                        <li><a href="">Limpar dados</a></li>
+                        <span class="linha-separacao">|</span>
+                        <li><a href="">Configurações</a><li>
                     </ul>
-                </nav>  
-            </section> 
+                </nav>
+            </div>
+
+            <!--h1 só aparece no mobile-->
+            <h1 class="invisibol-h1">Controle financeiro</h1>
 
 
-     <!-- Section Que Aparece Apenas Em Dispositivos MOVEIS-->
-          <div class="container">
-                    <input type="checkbox" id="checkbox-menu">
-                
-                    <label for="checkbox-menu">
+ <!--     --------  Div Para menu mobile só aparece com 880px  ----- -->
+            <div class="container">
+                <input type="checkbox" id="checkboc-menu">
+                <label class="label-humb" for="checkboc-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                    </label>
-         </div>
-
-
-
-    </header>
-    <main class="conteudo-principal">
-
-
-        
-            <div class="form-div">    
-               <div class="div-h1"> 
-                     <h2>Nova transacão</h2>
-               </div> 
-                <div class="form-central">
-                    <div class="div-select">
-                        <label> Tipo de transação</label>
-                        <select>
-                            <option>Compra</option>
-                            <option>Venda</option>
-                        </select>
+                </label>
+            </div>
+        </header>
+        <main>
+            <div class="conteudo-principal">
+                <div class="nova-transacao">
+                    <h2 class="texto-nova-transacao">
+                        Nova Transação
+                    </h2>
+                    <div class="input-buttom">
+                        <div class="row pequeno-input">
+                            <label for="" class="transacao-texto">Tipo de transacao</label>
+                            <select name="" id="selecao" class="input-transacao">
+                                <option value="">compra</option>
+                                <option value="">venda</option>
+                            </select>
+                        </div> 
+                        <div class="row grande-input">   
+                                <label for="" class="transacao-texto">Nome da mercadoria</label>
+                                <input type="text" class="input-transacao" placeholder="input">
+                        </div>
+                        <div class="row pequeno-input">
+                                <label for="" class="transacao-texto">Valor</label>
+                                <input type="number" class="input-transacao" placeholder="R$ 0,00">
+                        </div>
+                        <div class="btn-inv"> </div>   
+                        <button class="btn-transacao">Adicionar transação</button>
+                           
                     </div>
-                    <div class="label2">
-                        <label>Nome da Mercadoria</label>
-                        <input type="text" placeholder="input" class="input-class">
-                    </div>
-                    <div class="label3">
-                        <label>Valor</label>
-                        <input type="number" id="" placeholder="R$ 0,00">
-                    </div>
-                    <div class="btn">
-                        <button class="btn-envio"> Adcionar transação</button>
-                    </div>
-                </div>    
-            </div>    
-            <div class="section-extrato">
-                    <div class="extrato-child">
-                        <p>
-                        <h3>Extrato de Transações</h3>
-                        </p>    
-                    </div>
-                <table>
-                     <thead>
+                </div>
+
+                <div class="extrato-transacao">
+                    <div class="texto-extrato">
+                        <h2 class="texto-extrato-transacao">
+                            Extrato de transação
+                        </h2>
+                    </div> 
+                    <table>
+                        <thead>
                             <tr>
-                                <th class="mercadoria">Mercadoria</th>
-                                <th class="valor">Valor</th>
+                                <th class="texto-mercadoria">Mercadoria</th>
+                                <th class="texto-valor">Valor</th>
                             </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                            <td>+ Lorem ipsum dolor sit amet consectetur </td>
-                            <td class="valor">R$ 12.999,99</td>
-                        </tr>
-                        <tr>
-                             <td>- Quis nostrud exercitation</td>
-                             <td class="valor">R$ 99,99</td>
-                        </tr>
-                        <tr>
-                             <td>+ Lorem ipsum </td>
-                            <td class="valor">R$ 9,99</td>
-                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>+ Loren ipsum dolor sit amet consectetur</td>
+                                <td class="valor-inicial">R$ 12.999,99</td>
+                            </tr>
+                            <tr>
+                                <td>- Quis mostred exercition</td>
+                                <td class="valor-inicial">R$ 99,99</td>
+                            </tr>
+                            <tr>
+                                <td>+ Lorem ipsum</td>
+                                <td class="valor-inicial">R$ 9,99</td>
+                            </tr>
+                            <tr></tr>
+                            <tr class="final-tr-valor">
+                                
+                                <td class="valor-final">Total</td>
+                                <td class="valor-total">R$ 12.909,99</td>
+                            </tr>
+                            <tr>
+                                <td class="td-vazia"></td>
+                                <td class="lucro">[lucro]</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>   
+                </div>
 
-                        <tr>
-                            <td  class="lineUnder" ></td>
-                            <td  class="lineUnder" ></td>
 
-                        </tr>
+            </div>
 
-                            
-                        <tr class="FinalValue">
-                            <td class="TotalValor">Total</td>
-                            <td class="valor-final">R$ 12.909,99 <br>[Lucro]</br></td>
-                        </tr>
-                    </tbody>
-                </table>   
-            </div> 
-    </main>
+
+        </main>
+
+
     
 </body>
 </html>
