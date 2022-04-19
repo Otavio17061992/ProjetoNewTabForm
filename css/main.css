@@ -94,7 +94,7 @@ a{
 
 /*--------------------------Style Main --------------------*/
 
-hr {
+.linha-divisao {
     display: none;
 }
 
@@ -155,7 +155,7 @@ hr {
     display: block;
     margin: auto;
     font-size: 18px;
-    
+    margin-left: 1.4em;
 }
 
 
@@ -558,7 +558,7 @@ tr .td-vazia, .lucro {
     }
 
 
-    hr {
+    .linha-divisao {
         display: block;
         margin-left: 40px;
         margin-right: 28px;
