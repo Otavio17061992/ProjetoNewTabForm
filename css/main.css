@@ -287,8 +287,14 @@ tr .lucro {
 
 tr .td-vazia, .lucro {
     border-top: 0px;
+    padding-top: 0;
 
+}
 
+.linha-extra{
+
+        border-bottom: #979797 solid 1px;
+        padding: 1px;
 }
 
 /*--------------------------- Media Screen Edtion ------------------*/
