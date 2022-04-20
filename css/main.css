@@ -585,6 +585,16 @@ tr .td-vazia, .lucro {
     .nova-transacao {
         border: 0px;
     }
+    tr .texto-valor {
+        padding-right: 1.2em;
+    }
+    tr .valor-inicial {
+        text-align: end;
+        font-weight: 700;
+        flex-wrap: nowrap;
+        padding: 0;
+        padding-right: 10px;
+    }
 }
 
 
