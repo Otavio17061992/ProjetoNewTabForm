@@ -1,8 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
+    
+}
+main {
+    max-width: 1500px;
 }
 
 a , ul{
@@ -22,6 +26,8 @@ a , ul{
     padding-left: 260px;
     padding-right: 227px;
 }
+
+
 
 #check {
     display: none;
@@ -111,21 +117,18 @@ a{
 .nova-transacao {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    width: 42em;
     background: #FFFFFF;
     border: 1px solid #979797;
     box-sizing: border-box;
     border-radius: 4px;
     margin: 20px;
-    width: 728px;
 }
 
 
 .row{
     display: flex;
     flex-direction: column;
-    margin: 20px 20px 0px 20px;
+    margin: 10px 10px 0px 10px;
 }
 
 
@@ -134,8 +137,9 @@ a{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    margin-left: 18px;
+    margin-left: 10px;
     flex-wrap: nowrap;
+    margin: 10px 10px 0px 10px;
 }
 
 .grande-input {
@@ -143,7 +147,7 @@ a{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    margin: 20px 20px 0px 20px;
+    margin: 10px 10px 0px 10px;
 }
 
 
@@ -155,7 +159,8 @@ a{
     display: block;
     margin: auto;
     font-size: 18px;
-    margin-left: 1.4em;
+    margin-top: 20px;
+    
 }
 
 
@@ -168,8 +173,8 @@ a{
     color: #333333;
     display: block;
     text-align: start;
-    font-size: 18px;
-    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 5.5px;
     
 }
 
@@ -189,10 +194,8 @@ a{
     box-sizing: border-box;
     border-radius: 4px;
     height: 32px;
-    left: 0px;
-    right: 0.2px;
-    top: 24px;
-    width: 100%;
+    width: 380px;
+    font-size: 14px;
 }
 
 .btn-transacao {
@@ -201,14 +204,12 @@ a{
     margin-top: 20px;
     color: #FFF;
     font-size: 14px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    margin-top: 49px;
-    width: 89%;
     /* margin: 0; */
     align-items: center;
-    margin-left: 16px;
-    
+    height: 32px;
+    width: 380px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 
 }
 
@@ -301,7 +302,7 @@ tr .td-vazia, .lucro {
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1334px) {
 
     .cabecalho {
         display:flex;
@@ -326,7 +327,7 @@ tr .td-vazia, .lucro {
 /*--------------------------768px---------------------------*/
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 823px) {
 
 
     .cabecalho{
@@ -427,7 +428,7 @@ tr .td-vazia, .lucro {
     .nova-transacao {
         display: flex;
         flex-direction: column;
-        width: 90vw;
+        
     
     }
 
@@ -443,11 +444,11 @@ tr .td-vazia, .lucro {
     }
 
     .pequeno-input {
-        width: calc(20% - 30px);
+        width: calc(20% - 20px);
     }
 
     .grande-input {
-        width: calc(60% - 60px);
+        width: calc(60% - 20px);
     }
 
     .input-transacao {
@@ -471,9 +472,7 @@ tr .td-vazia, .lucro {
     .nova-transacao {
         border: 1px solid #97979797;
         margin: 20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: calc(100% - 27px);
+        width: calc(100% - 20px);
         flex-wrap: wrap;
     }
 
@@ -497,7 +496,8 @@ tr .td-vazia, .lucro {
         font-size: 12px;
         text-align: center;
         margin-top: 17px;
-        width: 17%;
+        width: 200px;
+        height: 32px;
         margin-right: 9px;
         padding: 0px;
         
@@ -566,8 +566,7 @@ tr .td-vazia, .lucro {
 
     .linha-divisao {
         display: block;
-        margin-left: 40px;
-        margin-right: 28px;
+        margin-left: 21px;
         margin-bottom: 10px;
     }
 
