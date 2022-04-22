@@ -539,6 +539,7 @@ tr .td-vazia, .lucro {
         border: 1px solid #97979797;
         border-radius: 4px;
         height: 32px;
+        
     }
     .aba ul {
         list-style-type: none;
@@ -593,6 +594,10 @@ tr .td-vazia, .lucro {
         flex-wrap: nowrap;
         padding: 0;
         padding-right: 10px;
+    }
+    .transacao-texto   {
+
+      padding-top: 20px; 
     }
 }
 
