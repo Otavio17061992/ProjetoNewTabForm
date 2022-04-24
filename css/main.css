@@ -1,3 +1,12 @@
+:root {
+    --primary-collor:#E0E0E0;
+    --secundy-collor:#333333;
+    --terciary-collor:#FFFFFF;
+    --quarter-collor:#979797;
+  }
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +27,7 @@ a , ul{
 
 .cabecalho {
     display: flex;
-    background: #E0E0E0;
+    background: var(--primary-collor);
     justify-content: space-between;
     align-items: center;
     height: 80px;
@@ -56,7 +65,7 @@ a , ul{
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #333333;
+    color: var(--secundy-collor);
 }
 
 
@@ -66,12 +75,12 @@ a{
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    color:#333333;
+    color:var(--secundy-collor);
 
 }
 
 .navegacao {
-    background: #FFFF;
+    background: var(--terciary-collor);
     padding: 8px 20px 8px 20px;
 }
 
@@ -117,8 +126,8 @@ a{
 .nova-transacao {
     display: flex;
     flex-wrap: wrap;
-    background: #FFFFFF;
-    border: 1px solid #979797;
+    background: var(--terciary-collor);
+    border: 1px solid var(--quarter-collor);
     box-sizing: border-box;
     border-radius: 4px;
     margin: 20px;
@@ -170,7 +179,7 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: 22px;
-    color: #333333;
+    color:var(--secundy-collor);
     display: block;
     text-align: start;
     font-size: 14px;
@@ -190,7 +199,7 @@ a{
 }
 
 .input-transacao{
-    border: 1px solid #979797;
+    border: 1px solid var(--quarter-collor);
     box-sizing: border-box;
     border-radius: 4px;
     height: 32px;
@@ -199,10 +208,10 @@ a{
 }
 
 .btn-transacao {
-    background: #333333;
+    background: var(--secundy-collor);
     border-radius: 4px;
     margin-top: 20px;
-    color: #FFF;
+    color: var(--terciary-collor);
     font-size: 14px;
     /* margin: 0; */
     align-items: center;
@@ -259,7 +268,7 @@ tbody td {
     padding: 13px;
     text-align: left;
     font-weight: 400;
-    border-top: solid 1px #979797;
+    border-top: solid 1px var(--quarter-collor);
 }
 
 
@@ -294,15 +303,25 @@ tr .td-vazia, .lucro {
 
 .linha-extra{
 
-        border-bottom: #979797 solid 1px;
+        border-bottom: var(--quarter-collor) solid 1px;
         padding: 1px;
 }
 
 /*--------------------------- Media Screen Edtion ------------------*/
 
+@media screen and (min-width:1500px){
+
+    .navegacao{
+        margin-right: 4vw;
+    }
+    
+}
+
 
 
 @media screen and (max-width: 1334px) {
+
+    
 
     .cabecalho {
         display:flex;
@@ -335,13 +354,19 @@ tr .td-vazia, .lucro {
     }
 
     .invisibol-h1 {
-        display:block;
+        display:none;
         font-size: 20px;
         
     }
 
+    .logo-class {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .controle-financeiro {
-        display: none;
+        display: block;
     }
 
     .cabecalho .nav {
@@ -351,7 +376,7 @@ tr .td-vazia, .lucro {
     .menu div {
         width: 33px;
         height: 4px;
-        background-color: #333;
+        background-color: var(--secundy-collor);
         margin: 4px 0;
     
     }
@@ -363,8 +388,8 @@ tr .td-vazia, .lucro {
     
     .aba ul {
         list-style-type: none;
-        background-color: #333;
-        color: white;
+        background-color: var(--secundy-collor);
+        color: var(--terciary-collor);
         position: fixed;
         height: 100%;
         width: 35.4%;
@@ -389,13 +414,13 @@ tr .td-vazia, .lucro {
     }
     
     .aba ul li:hover {
-        background-color: #c4c4c4;
-        color: #333;
+        background-color: var(--primary-collor);
+        color: var(--secundy-collor);
     }
     
     .aba ul li:nth-child(1) {
-        background-color: #333;
-        color: white;
+        background-color:var(--secundy-collor);
+        color: var(--terciary-collor);
     }
     
     .aba:hover ul {
@@ -470,7 +495,7 @@ tr .td-vazia, .lucro {
     }
 
     .nova-transacao {
-        border: 1px solid #97979797;
+        border: 1px solid var(--quarter-collor);
         margin: 20px;
         width: calc(100% - 20px);
         flex-wrap: wrap;
@@ -487,7 +512,7 @@ tr .td-vazia, .lucro {
     }
 
     .nova-transacao input, .nova-transacao select {
-        border: 1px solid #97979797;
+        border: 1px solid var(--quarter-collor);
         border-radius: 4px;
         height: 32px;
     }
@@ -524,6 +549,12 @@ tr .td-vazia, .lucro {
 }
 
 @media screen and (max-width: 708px) {
+
+    .logo-class {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
     
     .nova-transacao > div {
 
@@ -536,15 +567,15 @@ tr .td-vazia, .lucro {
 
     .nova-transacao > input, select {
         width: 100%;
-        border: 1px solid #97979797;
+        border: 1px solid var(--quarter-collor);
         border-radius: 4px;
         height: 32px;
         
     }
     .aba ul {
         list-style-type: none;
-        background-color: #333;
-        color: white;
+        background-color: var(--secundy-collor);
+        color: var(--terciary-collor);
         position: fixed;
         height: 100%;
         width: 85.4%;
@@ -600,6 +631,8 @@ tr .td-vazia, .lucro {
       padding-top: 20px; 
     }
 }
+
+
 
 
 
