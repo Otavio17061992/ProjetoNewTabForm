@@ -23,6 +23,18 @@ a , ul{
     list-style: none;
 }
 
+a{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color:var(--secundy-collor);
+
+}
+
+
+
 /*--------------------STYLE CABECALHO -------------*/
 
 .cabecalho {
@@ -45,6 +57,8 @@ a , ul{
 .aba {
     display: none;
 }
+
+
 
 .logo-class {
     display: flex;
@@ -69,15 +83,6 @@ a , ul{
 }
 
 
-a{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color:var(--secundy-collor);
-
-}
 
 .navegacao {
     background: var(--terciary-collor);
@@ -290,6 +295,10 @@ tr .td-vazia, .lucro {
 
 }
 
+tr .texto-valor {
+    padding-right: 20px;
+}
+
 .linha-extra{
 
         border-bottom: var(--quarter-collor) solid 1px;
@@ -300,10 +309,9 @@ tr .td-vazia, .lucro {
 
 @media screen and (min-width:1500px){
 
-    .navegacao{
-        margin-right: 4vw;
+    .nav {
+        margin-right: 67px;
     }
-    
 }
 
 
@@ -421,7 +429,7 @@ tr .td-vazia, .lucro {
         width: 100%;
         padding: 2px;
         border-radius: 10px;
-        background-color: #333333;
+        background-color: var(--secundy-collor);
         
        
     }
