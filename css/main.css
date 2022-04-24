@@ -89,17 +89,7 @@ a{
     cursor: pointer;
 }
 
-.hamburguer {
-    width: 2rem;
-    height: 1.3rem;
-    z-index: 5;
-    right: 2rem;
-    top: 1.9rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-}
+
 
 .invisibol-h1 {
     display: none;
@@ -283,7 +273,7 @@ tr .valor-total{
 
 tr .texto-mercadoria {
     text-align: start;
-    padding-left: 1.2em;
+    padding-left: 20px;
 }
 
 tr .valor-final{
@@ -616,7 +606,7 @@ tr .td-vazia, .lucro {
         border: 0px;
     }
     tr .texto-valor {
-        padding-right: 1.2em;
+        padding-right: 20px;
     }
     tr .valor-inicial {
         text-align: end;
